@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4" client="site" method="upgrade">
+	<name>dehkadeco pro counter analyze</name>
+	<author>dehkadeco.ir</author>
+	<creationDate>sep 2015</creationDate>
+	<copyright>Copyright (c) 2015 dehkadeco.ir</copyright>
+	<license></license>
+	<authorEmail>info@dehkadeco.ir</authorEmail>
+	<authorUrl>http://www.dehkadeco.ir</authorUrl>
+	<version>0.5</version>
+	<description>MOD_DC_PRO_COUNTER_DESCRIPTION</description>
+	<files>
+		<filename module="mod_dc_pro_counter_analyze">mod_dc_pro_counter_analyze.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>media</folder>
+	</files>
+	<languages folder="administrator">
+		<language tag="en-GB">language/en-GB/en-GB.mod_dc_pro_counter_analyze.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_dc_pro_counter_analyze.sys.ini</language>
+		<language tag="fa-IR">language/fa-IR/fa-IR.mod_dc_pro_counter_analyze.ini</language>
+        <language tag="fa-IR">language/fa-IR/fa-IR.mod_dc_pro_counter_analyze.sys.ini</language>
+		</languages>
+		
+	<config>
+<fields name="params">
+    <fieldset name="basic">
+        
+				<field name="display_day_visitor" type="radio" default="1" class="btn-group" label="Display day visitor" description="Display site day visitor">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="display_last_day_visitor" type="radio" default="1" class="btn-group" label="Display last day visitor" description="Display site yesterday visitor">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="display_mounth_visitor" type="radio" default="1" class="btn-group" label="Display mounth visitor" description="Display site mounth visitor">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="display_all_visitor" type="radio" default="1" class="btn-group" label="Display all visitor" description="Display site all visitor">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				
+    </fieldset>
+</fields>
+</config>
+</extension>

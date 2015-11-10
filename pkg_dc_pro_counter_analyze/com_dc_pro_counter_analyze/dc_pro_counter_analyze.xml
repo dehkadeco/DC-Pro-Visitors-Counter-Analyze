@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade" >
+	<name>Dc_pro_counter_analyze</name>
+	<author>Dehkadeco.ir seyed aboalfazl mousavi</author>
+	<creationDate>sep 2015</creationDate>
+	<copyright>dehkadeco.ir</copyright>
+	<license>License Info</license>
+	<authorEmail>dehkadeco.ir@gmail.com</authorEmail>
+	<authorUrl>dehkadeco.ir</authorUrl>
+	<version>0.5</version>
+	<description>Description of the Dc_pro_counter_analyze component ...</description>
+	 <!--<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>-->
+	 <updateservers>
+		<server type="extension" priority="2" name="Dc_pro_counter_analyze Update Site">http://www.dehkadeco.ir/updates/joomla/Dc_pro_counter_analyze.xml</server>
+	</updateservers>
+
+ <install>
+		<sql>		
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>			
+		
+		</sql>
+	</install>
+ <uninstall>
+		<sql>	
+			<file driver="mysqli" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+
+	<administration>
+		<menu>Dc_pro_counter_analyze</menu>
+		<files folder="administrator">
+			<filename>dc_pro_counter_analyze.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<folder>views</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>helpers</folder>
+			<folder>sql</folder>
+			<folder>assets</folder>
+		</files>
+		<languages folder="administrator">
+		<language tag="en-GB">language/en-GB/en-GB.com_dc_pro_counter_analyze.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_dc_pro_counter_analyze.sys.ini</language>
+		<language tag="fa-IR">language/fa-IR/fa-IR.com_dc_pro_counter_analyze.ini</language>
+        <language tag="fa-IR">language/fa-IR/fa-IR.com_dc_pro_counter_analyze.sys.ini</language>
+		</languages>
+	</administration>
+
+	
+</extension>
